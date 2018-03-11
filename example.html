@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+#main-div{
+ position:absolute;
+ top:40%;
+ left:50%;
+ border-width:thin;
+ border-style:solid;
+ border-color:black;
+ padding:10%;
+ height:50%;
+}
+#name-id{
+  height:10%;
+}
+@media screen and (max-width:800px){
+ #name-id{
+   height:10%;
+ }
+}
+@media screen and (min-width:800px){
+ #name-id{
+   height:10%;
+ }
+}
+</style>
+</head>
+<body onload="myFunction()">
+<div id="main-div">
+Name:
+<input id="name-id" type="text" name="nameInput">
+</div>
+<script>
+function myFunction(){
+ alert(window.innerWidth);
+}
+</script>
+</body>
+</html>
